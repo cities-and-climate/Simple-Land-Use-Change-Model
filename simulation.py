@@ -8,6 +8,7 @@ from numba import njit
 def simulation_numba(urb_fin_new,ini_urb,order_urbanization,dist,index_exclu_1d_arr,index_uni,index_double):
     new_urb = np.zeros(len(order_urbanization),dtype=np.int64)
     lig,col = urb_fin_new.shape
+    i = 0
     for rand in order_urbanization:
         urb_fin_new_1d = urb_fin_new.reshape(lig*col).copy()
         growth_cells = np.where(urb_fin_new_1d==rand)[0]
@@ -50,5 +51,5 @@ def simulation_numba(urb_fin_new,ini_urb,order_urbanization,dist,index_exclu_1d_
         urb_fin_new_bis = urb_fin_new.copy().reshape(lig*col)
         urb_fin_new_bis[index_exclu_1d_arr] = 0
         urb_fin_new = urb_fin_new_bis.reshape((lig,col)).copy()
-        
+        i = i + 1
     return new_urb
