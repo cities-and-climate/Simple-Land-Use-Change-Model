@@ -16,9 +16,9 @@ We consider here 4 types of growth:
 
 ### Inputs
 
-urban_path_ini = 'Inputs/urban2012_roads.gif' # Path to Initial Urban Raster\
-urban_path_fin = 'Inputs/urban2017_roads.gif' # Path to Final Urban Raster\
-path_roads = 'Inputs/roads_12_mod.tif' # Path to Road Raster at the Initial Period
+urban_path_ini = 'Inputs/urban2012_roads.gif' _# Path to Initial Urban Raster_\
+urban_path_fin = 'Inputs/urban2017_roads.gif' _# Path to Final Urban Raster_\
+path_roads = 'Inputs/roads_12_mod.tif' _# Path to Road Raster at the Initial Period_
 
 ### Output
 
@@ -36,16 +36,16 @@ We present here 2 methods of Simulation:
 
 ### Inputs
 
-date_ini = '2017' # Initial date of the Simulation\
-date_fin = '2050' # End date of the Simulation
+date_ini = '2017' _# Initial date of the Simulation_\
+date_fin = '2050' _# End date of the Simulation_
 
-urban_path_ini = 'Inputs/urban2017_roads.gif' # Initial Raster of Urban Areas\
-path_roads = 'Inputs/roads_17_mod.tif' # Initial Raster of Roads\
-excluded_areas_path = 'Inputs/excluded.gif' # Areas excluded from Urbanization\
-outside_boundaries_path = 'Inputs/outside_boundaries.tif' # If the area of study is not square, a Raster File for outside boundaries
+urban_path_ini = 'Inputs/urban2017_roads.gif' _# Initial Raster of Urban Areas_\
+path_roads = 'Inputs/roads_17_mod.tif' _# Initial Raster of Roads_\
+excluded_areas_path = 'Inputs/excluded.gif' _# Areas excluded from Urbanization_\
+outside_boundaries_path = 'Inputs/outside_boundaries.tif' _# If the area of study is not square, a Raster File for outside boundaries_
 
-objectif_urba =  24004 # Number of cells to urbanize\
-edge_growth,spread_growth,road_growth,spont_growth = 93,4,1,2 # Coefficients of the different types of growth (they have to sum to 100)
+objectif_urba =  24004 _# Number of cells to urbanize_\
+edge_growth,spread_growth,road_growth,spont_growth = 93,4,1,2 _# Coefficients of the different types of growth (they have to sum to 100)_
 
 ### Outputs
 
