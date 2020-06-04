@@ -50,7 +50,7 @@ def create_growth_candidate_cells(data_urb,data_road,val_urb,road_val,dist,index
 
         *index_outside_boundaries* : list of indexes either in the excluded areas or outside boundaries
 
-        *non_urb_val* : Raster value for non urban areas
+        *non_urb_val* : Raster value for non urban values
         
     Return:
         *edge_growth_cells*: index of cells suited for edge growth 
@@ -59,7 +59,6 @@ def create_growth_candidate_cells(data_urb,data_road,val_urb,road_val,dist,index
         *spont_growth_cells*: index of cells suited for spontaneous growth 
 
     """
-
     urb_index = np.where(data_urb==val_urb)
 
     urb_index = [(urb_index[0][i],urb_index[1][i]) for i in range(len(urb_index[0]))]

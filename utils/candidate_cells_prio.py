@@ -28,7 +28,7 @@ def get_index_around_new_urb_prio(data,list_coord,dist=1):
     full_index = [(x_index[i],y_index[i]) for i in range(len(x_index))]
     return full_index
 
-def create_growth_candidate_cells(data_urb,data_road,val_urb,road_val,dist,dict_double_uni,index_outside_boundaries,non_urb_val=0):
+def create_growth_candidate_cells_prio(data_urb,data_road,val_urb,road_val,dist,dict_double_uni,index_outside_boundaries,non_urb_val=0):
     """
     Given rasters of urbanization and roads data return cells of non urban areas 
     in a square of size "dist" that could fall in the poll of different types of
