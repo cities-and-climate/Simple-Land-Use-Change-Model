@@ -12,7 +12,7 @@ We consider here 4 types of growth:
 1- Edge Growth: Growth happening around already dense areas \
 2- Road Related Growth: Growth happening around roads and/or public transport\
 3- Spontaneous Growth: Occurs when a new cell is urbanized in the middle of nowhere\
-4- Spread Growth: Occurs when a new cell is urbanized around an isolated small urban areas
+4- Spread Growth: Occurs when a new cell is urbanized around an isolated small urban area
 
 ### Inputs
 
